@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff0000</color>
+    <color name="colorPrimaryDark">#fc0000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="condition">#4A7BA7</color>
+
+    <!-- Text color for the details of the earthquake in the list item -->
+    <color name="textColorBoxNumber">#B4BAC0</color>
+
+    <!-- Text color for the primary location of the earthquake in the list item -->
+    <color name="textColorSerialNumber">#2B3D4D</color>
+
+    <!-- Circle color for the NEW battery-->
+    <color name="newBattColor">#64DD17</color>
+
+    <!-- Circle color for the USED battery-->
+    <color name="usedBattColor">#ff0000</color>
+
+    <!--Default color for the battery, that condition is unknown-->
+    <color name="defaultColor">#FFFF00</color>
+
+    <!--Background color of the batteryitem-->
+    <color name="backGroundColor">#ECEFF1</color>
+
+    <!--Background color of the recyclerView Layout-->
+    <color name="recyclerViewGroundColor">#cfd8dc</color>
+
+    <color name="swipeButton">#FFFFFF</color>
+
+    <!--Swipe Button Background-->
+    <color name="swipeBtnBackground">#EEEEEE</color>
+
+</resources>

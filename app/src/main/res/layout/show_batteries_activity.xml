@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="back to main screen"
+            android:id="@string/backToMainScreen"
+            android:onClick="backToMainScreen"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Search"
+                    android:layout_weight="1"
+                    android:id="@+id/buttonSearch"/>
+        </TableRow>
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scroll">
+        <LinearLayout
+            android:id="@+id/linLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

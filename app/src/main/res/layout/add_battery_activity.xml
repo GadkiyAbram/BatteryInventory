@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4pt"
+        android:layout_marginRight="4pt"
+        android:layout_marginTop="10pt"
+        android:background="@color/recyclerViewGroundColor"
+        android:text="Insertion Battery Form"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="8pt" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4pt"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/radioButtonNB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:buttonTint="#21ea0b"
+                android:checked="true"
+                android:text="New Battery"
+                android:textColor="#14be01"
+                android:textSize="10pt" />
+
+            <RadioButton
+                android:id="@+id/radioButtonUB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:buttonTint="#f70606"
+                android:checked="false"
+                android:text="Used Battery"
+                android:textColor="#fc0303"
+                android:textSize="10pt" />
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4pt"
+            android:layout_marginRight="4pt"
+            android:layout_marginTop="4pt"
+            android:orientation="vertical"
+            android:textSize="20pt">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+
+                    android:id="@+id/editTextBoxN"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Pelicase number"
+                    android:inputType="number"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/editTextSer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Serial 1 number"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/editTextSer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Serial 2 number"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/editTextSer3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Serial 3 number"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/editTextDM"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Date of manufacture"
+                    android:inputType="date"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/editTextCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Container number"
+                    android:textSize="30dp" />
+
+                <EditText
+                    android:id="@+id/editTextComment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/edittext_custom"
+                    android:paddingLeft="10dp"
+                    android:hint="Comment if applicable"
+                    android:textSize="30dp" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4pt"
+                android:gravity="center_horizontal">
+
+                <com.ebanx.swipebtn.SwipeButton
+                    android:id="@+id/swipeBtn"
+                    app:inner_text="ADD BATTERY"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    app:button_background="@drawable/shape_button"
+                    app:inner_text_color="@android:color/white"
+                    app:inner_text_size="16dp"
+                    app:inner_text_bottom_padding="18dp"
+                    app:inner_text_top_padding="18dp"
+                    app:button_image_disabled="@drawable/ic_lock_open_black_24dp"
+                    app:button_image_enabled="@drawable/ic_lock_outline_black_24dp"
+                    app:button_left_padding="20dp"
+                    app:button_right_padding="20dp"
+                    app:button_top_padding="20dp"
+                    app:button_bottom_padding="20dp"/>
+
+                <Button
+                    android:id="@+id/buttonShowBatteries"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#f96b6b"
+                    android:onClick="ShowBatteries"
+                    android:text="Show batteries"
+                    android:textColor="#ffffff" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
